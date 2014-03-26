@@ -23,7 +23,6 @@ exports.createParser = function() {
   // Store headers
   parser.onHeadersComplete = function(headers) {
     info = headers
-    info.method = HTTPParser.methods[info.method]
   }
 
   parser.onMessageComplete = function() {
